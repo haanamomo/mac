@@ -1,4 +1,4 @@
-# 快捷键 
+## 快捷键 
 
 锁屏 `cmd + control + q`
 
@@ -16,44 +16,44 @@
 
 切换tab `cmd + shift + []`
 
-# 查看CPU型号
+## 查看CPU型号
 
 ```sh
 sysctl machdep.cpu.brand_string
 ```
 
-# 语音备忘录的位置
+## 语音备忘录的位置
 
 ```sh
 ~/Library/Application Support/com.apple.voicememos
 ```
 
-# 报错the application cannot be opened
+## 报错the application cannot be opened
 
 ```
 chmod +x SomeApp.app/Contents/MacOS/\*
 ```
 
-# diskutil
+## diskutil
 
 * 列出所有设备：`diskutil list`
 * 格式化为ExFAT：`diskutil eraseDisk ExFAT <new disk name> </dev/DiskNodeID>`
 
-# brew
+## brew
 
-## Install
+### Install
 
 ```sh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## 防止自动更新
+### 防止自动更新
 
 ```
 export  HOMEBREW_NO_AUTO_UPDATE=1
 ```
 
-## 使用国内镜像
+### 使用国内镜像
 
 > [清华大学镜像使用说明](https://mirror.tuna.tsinghua.edu.cn/help/homebrew/)
 
@@ -70,25 +70,25 @@ echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 source ~/.zshrc
 ```
 
-## 下载时开启proxy
+### 下载时开启proxy
 
 ```sh
 ALL_PEOXY=socks5://localhost:1086 brew install <pkg>
 ```
 
-## 检查app是否是通过brew安装的
+### 检查app是否是通过brew安装的
 
 ```sh
 brew list | grep vim
 ```
 
-## 搜索库中的软件
+### 搜索库中的软件
 
 ```
 brew search /正则表达式/
 ```
 
-## 添加第三方仓库 brew tap
+### 添加第三方仓库 brew tap
 
 ```sh
 brew tap haanamomo/repo
@@ -98,7 +98,7 @@ brew tap  # 查看已经tap的第三方仓库
 
 默认这些仓库来源于github, 实际仓库名是homebrew-repo
 
-## brew服务管理
+### brew服务管理
 
 ```sh
 # 列出brew安装的, 支持brew管理的服务
@@ -107,7 +107,7 @@ brew services list
 brew services start/stop/restart mysql@5.7
 ```
 
-# alfred
+## alfred
 
 * file search: ` `或者`'`开启文件搜索，`shift`浏览，`enter`打开
 * clipboard
@@ -116,7 +116,7 @@ brew services start/stop/restart mysql@5.7
 
 > [从零开始学习 Alfred](https://sspai.com/post/32979)
 
-# 日历自然语言
+## 日历自然语言
 
 * `control + option + space` 快速创建日历
 * `cmd + 0` 打开日历
